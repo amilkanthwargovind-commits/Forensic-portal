@@ -1,0 +1,127 @@
+:root {
+  color-scheme: dark;
+}
+
+.card {
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.75));
+  border: 1px solid rgba(51, 65, 85, 0.75);
+  border-radius: 1rem;
+  box-shadow: 0 8px 24px rgba(2, 6, 23, 0.35);
+}
+
+.input {
+  width: 100%;
+  border-radius: 0.65rem;
+  border: 1px solid rgb(51, 65, 85);
+  background: rgb(15, 23, 42);
+  padding: 0.65rem 0.8rem;
+}
+
+.btn-primary,
+.btn-secondary {
+  border-radius: 0.65rem;
+  padding: 0.65rem 1rem;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #0891b2, #2563eb);
+}
+
+.btn-secondary {
+  background: rgb(30, 41, 59);
+  border: 1px solid rgb(71, 85, 105);
+}
+
+.btn-secondary:disabled {
+  opacity: 0.5;
+}
+
+.progress-track {
+  width: 100%;
+  background: #1e293b;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  width: 0;
+  height: 10px;
+  background: linear-gradient(90deg, #06b6d4, #6366f1);
+  transition: width 0.4s ease;
+}
+
+.report-document {
+  display: grid;
+  gap: 1.4rem;
+}
+
+.report-document section {
+  border: 1px solid rgba(51, 65, 85, 0.5);
+  border-radius: 0.8rem;
+  padding: 1rem;
+  background: rgba(15, 23, 42, 0.55);
+}
+
+.report-cover {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.risk-chip {
+  border-radius: 999px;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+}
+
+.heatmap {
+  width: 100%;
+  height: 14px;
+  background: #e2e8f0;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.heatmap > div {
+  height: 100%;
+}
+
+.note-box {
+  margin-top: 0.8rem;
+  background: rgba(12, 74, 110, 0.35);
+  border-left: 3px solid #22d3ee;
+  padding: 0.75rem;
+}
+
+.raw-box {
+  max-height: 24rem;
+  overflow: auto;
+  background: #020617;
+  border-radius: 0.75rem;
+  border: 1px solid #1e293b;
+  padding: 0.8rem;
+  font-size: 0.75rem;
+}
+
+@media print {
+  body {
+    background: white;
+    color: black;
+  }
+  header,
+  #intel-form,
+  #pipeline-status,
+  #download-pdf,
+  #copy-report,
+  #toggle-raw,
+  #raw-viewer {
+    display: none !important;
+  }
+  .card {
+    border: none;
+    box-shadow: none;
+    background: transparent;
+  }
+}

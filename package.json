@@ -1,0 +1,9 @@
+{
+  "name": "ai-forensic-due-diligence-engine",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "lint": "node -e \"console.log('No lint config yet')\"",
+    "check": "node --check api/intelligence.js && node --check lib/intelligencePipeline.js && node --check public/app.js"
+  }
+}
