@@ -12,8 +12,9 @@ or serve static + API with your preferred Node/Vercel runtime.
 
 ## Environment variables
 
+- `OPENSANCTIONS_API_KEY`
 - `OPENCORPORATES_API_KEY`
-- `NEWSAPI_KEY`
+- `NEWS_API_KEY`
 - `PERPLEXITY_API_KEY`
 
 ## Pipeline summary
